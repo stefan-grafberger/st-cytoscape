@@ -1,5 +1,4 @@
 st_cytoscape/frontend/node_modules/
-build/
 dist/
 st_cytoscape.egg-info/
 .vscode/
