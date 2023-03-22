@@ -43,29 +43,29 @@ function onRender(event: Event): void {
 
     // Take into account the Streamlit theme
     let nodeColor: any[] = [];
-    if (data.theme) {
-      if (data.theme?.backgroundColor) {
-        div.style.background = data.theme.backgroundColor;
-      }
-      nodeColor = [{
-        selector: "node:selected",
-        style: {
-          backgroundColor: data.theme?.primaryColor
-        }
-      }, {
-        selector: "node",
-        style: {
-          color: data.theme?.textColor,
-          fontFamily: data.theme?.font
-        }
-      }, {
-        selector: "edge:selected",
-        style: {
-          targetArrowColor: data.theme?.primaryColor,
-          lineColor: data.theme?.primaryColor
-        }
-      }]
-    }
+    // if (data.theme) {
+    //   if (data.theme?.backgroundColor) {
+    //     div.style.background = data.theme.backgroundColor;
+    //   }
+    //   nodeColor = [{
+    //     selector: "node:selected",
+    //     style: {
+    //       backgroundColor: data.theme?.primaryColor
+    //     }
+    //   }, {
+    //     selector: "node",
+    //     style: {
+    //       color: data.theme?.textColor,
+    //       fontFamily: data.theme?.font
+    //     }
+    //   }, {
+    //     selector: "edge:selected",
+    //     style: {
+    //       targetArrowColor: data.theme?.primaryColor,
+    //       lineColor: data.theme?.primaryColor
+    //     }
+    //   }]
+    // }
 
     //Create the Cytoscape Graph
     let cy = cytoscape({
