@@ -42,7 +42,7 @@ function onRender(event: Event): void {
     div.style.height = data.args["height"];
 
     // Take into account the Streamlit theme
-    let nodeColor: any[] = [];
+    // let nodeColor: any[] = [];
     // if (data.theme) {
     //   if (data.theme?.backgroundColor) {
     //     div.style.background = data.theme.backgroundColor;
@@ -71,7 +71,7 @@ function onRender(event: Event): void {
     let cy = cytoscape({
       container: div,
       elements: data.args["elements"],
-      style: data.args["stylesheet"].concat(nodeColor),
+      style: data.args["stylesheet"],
       layout: data.args["layout"],
       selectionType: data.args["selectionType"],
       userZoomingEnabled: data.args["userZoomingEnabled"],
